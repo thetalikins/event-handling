@@ -45,7 +45,7 @@ function three () {
 function four () {
   var four = document.getElementById('four')
   four.addEventListener('click', makeRed)
-  four.addEventListener('click', makeWhite)
+  four.addEventListener('mouseLeave', makeWhite)
 }
 // Changes the background color of event's target
 function makeBlue (evt) {
@@ -63,4 +63,8 @@ function makePurple (evt) {
 
 function makeRed (evt) {
   evt.target.style.backgroundColor = 'red'
+}
+
+function makeWhite (evt) {
+  evt.target.style.backgroundColor = 'white'
 }
